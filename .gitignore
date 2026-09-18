@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+
+# Vite / frontend build output
+dist/
+.vite/
+*.tsbuildinfo
+/vite.config.js
+/vite.config.d.ts
+
+# Environment files and local secrets
+.env
+.env.*
+*.jks
+*.keystore
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE and operating-system metadata
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Android / Gradle generated and machine-local files
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+**/local.properties
+*.apk
+*.aab
+captures/
+**/captures/
+.externalNativeBuild/
+**/.externalNativeBuild/
+.cxx/
+**/.cxx/
+
+# Generated Capacitor Android content
+android/capacitor-cordova-android-plugins/
+android/app/src/main/assets/public/
+android-parcial/capacitor-cordova-android-plugins/
+android-parcial/app/src/main/assets/public/
+
+# Test and coverage artifacts
+coverage/
+.nyc_output/

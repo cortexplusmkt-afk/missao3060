@@ -1,0 +1,11 @@
+<!-- Cole dentro de <application> no android/app/src/main/AndroidManifest.xml -->
+<receiver
+    android:name=".MissaoWidgetProvider"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    </intent-filter>
+    <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/missao_widget_info" />
+</receiver>

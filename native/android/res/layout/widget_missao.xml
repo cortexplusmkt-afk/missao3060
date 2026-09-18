@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/widget_bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="MISSÃO 30-60" android:textColor="#F3FAFD" android:textStyle="bold" android:textSize="16sp" />
+        <TextView android:id="@+id/w_streak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔥 1D" android:textColor="#FFB649" android:textStyle="bold" android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="6dp">
+        <TextView android:id="@+id/w_day" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="DIA 1 / 60" android:textColor="#7FCDE6" android:textSize="10sp" android:letterSpacing="0.12" />
+        <TextView android:id="@+id/w_weight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textColor="#EAF8FC" android:textStyle="bold" android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="8dp">
+        <TextView android:id="@+id/w_progress" android:layout_width="58dp" android:layout_height="wrap_content" android:text="42%" android:textColor="#55E1FF" android:textStyle="bold" android:textSize="24sp" />
+        <ProgressBar android:id="@+id/w_bar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="0dp" android:layout_height="8dp" android:layout_weight="1" android:max="100" android:progress="42" android:progressTint="#36D6FF" android:progressBackgroundTint="#18333E" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/w_mission" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="CAMINHADA PENDENTE" android:textColor="#AFC5CE" android:textSize="9sp" android:letterSpacing="0.08" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <TextView android:id="@+id/w_water" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="💧 0/4" android:textColor="#F0F7F9" android:textSize="11sp" />
+        <TextView android:id="@+id/w_steps" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="👟 0" android:textColor="#F0F7F9" android:textSize="11sp" />
+        <TextView android:id="@+id/w_cortex" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right" android:text="⚡ 0/60" android:textColor="#F0F7F9" android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
